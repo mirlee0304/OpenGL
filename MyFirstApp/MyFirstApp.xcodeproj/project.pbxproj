@@ -7,10 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3F8124B22B673FB200BFDF55 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FAC129A2B5F573800626565 /* OpenGL.framework */; };
+		3F8124B32B673FBC00BFDF55 /* GLUT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FAC129C2B5F574100626565 /* GLUT.framework */; };
+		3F8124B52B673FF300BFDF55 /* lib in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F8124B42B673FF300BFDF55 /* lib */; };
 		3FAC12932B5F571B00626565 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3FAC12922B5F571B00626565 /* main.cpp */; };
-		3FAC129F2B5F5D1200626565 /* libglfw.3.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FAC129E2B5F5D1200626565 /* libglfw.3.3.dylib */; };
-		3FAC12A12B5F5DED00626565 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FAC129A2B5F573800626565 /* OpenGL.framework */; };
-		3FAC12A42B5F5F5100626565 /* mmain.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3FAC12A22B5F5F5100626565 /* mmain.cpp */; };
+		3FAC12A42B5F5F5100626565 /* gl1.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3FAC12A22B5F5F5100626565 /* gl1.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -26,12 +27,13 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		3F8124B42B673FF300BFDF55 /* lib */ = {isa = PBXFileReference; lastKnownFileType = folder; name = lib; path = ../../../../../../opt/homebrew/Cellar/freeglut/3.4.0/lib; sourceTree = "<group>"; };
 		3FAC128F2B5F571B00626565 /* MyFirstApp */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = MyFirstApp; sourceTree = BUILT_PRODUCTS_DIR; };
 		3FAC12922B5F571B00626565 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		3FAC129A2B5F573800626565 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
 		3FAC129C2B5F574100626565 /* GLUT.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLUT.framework; path = System/Library/Frameworks/GLUT.framework; sourceTree = SDKROOT; };
 		3FAC129E2B5F5D1200626565 /* libglfw.3.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libglfw.3.3.dylib; path = ../../../../../../opt/homebrew/Cellar/glfw/3.3.9/lib/libglfw.3.3.dylib; sourceTree = "<group>"; };
-		3FAC12A22B5F5F5100626565 /* mmain.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = mmain.cpp; sourceTree = "<group>"; };
+		3FAC12A22B5F5F5100626565 /* gl1.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = gl1.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,8 +41,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3FAC129F2B5F5D1200626565 /* libglfw.3.3.dylib in Frameworks */,
-				3FAC12A12B5F5DED00626565 /* OpenGL.framework in Frameworks */,
+				3F8124B52B673FF300BFDF55 /* lib in Frameworks */,
+				3F8124B32B673FBC00BFDF55 /* GLUT.framework in Frameworks */,
+				3F8124B22B673FB200BFDF55 /* OpenGL.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,7 +71,7 @@
 			isa = PBXGroup;
 			children = (
 				3FAC12922B5F571B00626565 /* main.cpp */,
-				3FAC12A22B5F5F5100626565 /* mmain.cpp */,
+				3FAC12A22B5F5F5100626565 /* gl1.cpp */,
 			);
 			path = MyFirstApp;
 			sourceTree = "<group>";
@@ -76,6 +79,7 @@
 		3FAC12992B5F573700626565 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				3F8124B42B673FF300BFDF55 /* lib */,
 				3FAC129E2B5F5D1200626565 /* libglfw.3.3.dylib */,
 				3FAC129C2B5F574100626565 /* GLUT.framework */,
 				3FAC129A2B5F573800626565 /* OpenGL.framework */,
@@ -140,7 +144,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3FAC12A42B5F5F5100626565 /* mmain.cpp in Sources */,
+				3FAC12A42B5F5F5100626565 /* gl1.cpp in Sources */,
 				3FAC12932B5F571B00626565 /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -268,7 +272,7 @@
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
 				CODE_SIGN_STYLE = Automatic;
-				HEADER_SEARCH_PATHS = /opt/homebrew/Cellar/glfw/3.3.9/include/;
+				HEADER_SEARCH_PATHS = /opt/homebrew/Cellar/freeglut/3.4.0/include/;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					/opt/homebrew/Cellar/glfw/3.3.9/lib,
@@ -282,7 +286,7 @@
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
 				CODE_SIGN_STYLE = Automatic;
-				HEADER_SEARCH_PATHS = /opt/homebrew/Cellar/glfw/3.3.9/include/;
+				HEADER_SEARCH_PATHS = /opt/homebrew/Cellar/freeglut/3.4.0/include/;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					/opt/homebrew/Cellar/glfw/3.3.9/lib,
