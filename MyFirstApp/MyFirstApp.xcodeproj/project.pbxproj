@@ -16,6 +16,7 @@
 		3F8124C32B68B93A00BFDF55 /* lib in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F8124B42B673FF300BFDF55 /* lib */; };
 		3F8124C52B68BE7200BFDF55 /* gl2_displaylist.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3F8124C42B68BE7200BFDF55 /* gl2_displaylist.cpp */; };
 		3F8124C72B68C44400BFDF55 /* gl2_pj_modeling.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3F8124C62B68C44400BFDF55 /* gl2_pj_modeling.cpp */; };
+		3F8124C92B707F1D00BFDF55 /* gl3_hierarchy.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3F8124C82B707F1D00BFDF55 /* gl3_hierarchy.cpp */; };
 		3FAC12932B5F571B00626565 /* gl_initialize.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3FAC12922B5F571B00626565 /* gl_initialize.cpp */; };
 		3FAC12A42B5F5F5100626565 /* gl1_polygon.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3FAC12A22B5F5F5100626565 /* gl1_polygon.cpp */; };
 /* End PBXBuildFile section */
@@ -41,6 +42,7 @@
 		3F8124C12B68B87700BFDF55 /* lib */ = {isa = PBXFileReference; lastKnownFileType = folder; name = lib; path = ../../../../../../opt/homebrew/Cellar/glfw/3.3.9/lib; sourceTree = "<group>"; };
 		3F8124C42B68BE7200BFDF55 /* gl2_displaylist.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = gl2_displaylist.cpp; sourceTree = "<group>"; };
 		3F8124C62B68C44400BFDF55 /* gl2_pj_modeling.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = gl2_pj_modeling.cpp; sourceTree = "<group>"; };
+		3F8124C82B707F1D00BFDF55 /* gl3_hierarchy.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = gl3_hierarchy.cpp; sourceTree = "<group>"; };
 		3FAC128F2B5F571B00626565 /* MyFirstApp */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = MyFirstApp; sourceTree = BUILT_PRODUCTS_DIR; };
 		3FAC12922B5F571B00626565 /* gl_initialize.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = gl_initialize.cpp; sourceTree = "<group>"; };
 		3FAC129A2B5F573800626565 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
@@ -91,6 +93,7 @@
 				3F8124BF2B68B16700BFDF55 /* gl2_vertices.cpp */,
 				3F8124C42B68BE7200BFDF55 /* gl2_displaylist.cpp */,
 				3F8124C62B68C44400BFDF55 /* gl2_pj_modeling.cpp */,
+				3F8124C82B707F1D00BFDF55 /* gl3_hierarchy.cpp */,
 			);
 			path = MyFirstApp;
 			sourceTree = "<group>";
@@ -167,6 +170,7 @@
 				3F8124C72B68C44400BFDF55 /* gl2_pj_modeling.cpp in Sources */,
 				3F8124C02B68B16700BFDF55 /* gl2_vertices.cpp in Sources */,
 				3F8124C52B68BE7200BFDF55 /* gl2_displaylist.cpp in Sources */,
+				3F8124C92B707F1D00BFDF55 /* gl3_hierarchy.cpp in Sources */,
 				3F8124BC2B68945100BFDF55 /* gl2_callbacks2.cpp in Sources */,
 				3F8124BA2B6883B500BFDF55 /* gl2_callbacks.cpp in Sources */,
 				3FAC12A42B5F5F5100626565 /* gl1_polygon.cpp in Sources */,
